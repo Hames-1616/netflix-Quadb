@@ -34,7 +34,9 @@ class _FirstitemState extends ConsumerState<Firstitem> {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Detailscreen(data: widget.data,)));
               },
               child: Container(
-                margin: const EdgeInsets.only(left: 54, right: 45),
+                margin: EdgeInsets.only(left: MediaQuery.of(context).size.width /
+                            wid(context, 85), right: MediaQuery.of(context).size.width /
+                            wid(context, 80)),
                 child: Stack(
                   children: [
                     CachedNetworkImage(

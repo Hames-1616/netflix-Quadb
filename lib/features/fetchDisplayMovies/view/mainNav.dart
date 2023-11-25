@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:netflixassignment/core/color.dart';
 import 'package:netflixassignment/features/fetchDisplayMovies/view/homescreen.dart';
 import 'package:netflixassignment/features/fetchDisplayMovies/view/searchShow.dart';
 class MainNav extends StatefulWidget {
@@ -12,6 +10,7 @@ class MainNav extends StatefulWidget {
 }
 
 class _MainNavState extends State<MainNav> {
+  
   int _selectedIndex = 0; 
   final List<Widget> _screens = const [homeScreen(), SearchShow()];
 
