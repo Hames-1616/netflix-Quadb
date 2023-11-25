@@ -20,4 +20,15 @@ class fetchMovieRepo {
         .toList();
     return s;
   }
+
+  Future<List<Movie>> searchShow(String name) async {
+    final response =
+        await dio.get("https://api.tvmaze.com/search/shows?q=$name");
+
+    final s = (response.data as List)
+        .map((e) => Movie.fromJson(jsonEncode(e)))
+        .toList();
+
+    return s;
+  }
 }

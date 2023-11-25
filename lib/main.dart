@@ -4,6 +4,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:netflixassignment/core/color.dart';
 import 'package:netflixassignment/features/fetchDisplayMovies/view/homescreen.dart';
+import 'package:netflixassignment/features/fetchDisplayMovies/view/mainNav.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         scaffoldBackgroundColor: Colors.black
       ),
-      home: const homeScreen()
+      home: const MainNav()
     );
   }
 }
